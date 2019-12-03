@@ -1,6 +1,9 @@
 body{
     background-color: lightslategray;
-    border: 2px solid black;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 h1{
     font-size: 1.3rem;
@@ -23,12 +26,18 @@ input{
 .button:hover{
     border: 2px solid red;
 }
-p{
-    color: bisque;
-    text-decoration-line: underline;
-    text-align: center;
+form{
+    margin-left: 4rem;
+    line-break: normal;
+}
+td{
     font-size: 2rem;
-    background-color: black;
-    margin: 2rem;
-    height: 3rem;
+}
+h3,p{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.pay{
+    border: 2px solid black;
+    padding: 2rem;
 }
