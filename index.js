@@ -4,15 +4,14 @@ button=document.getElementById("btn");
 button.addEventListener("click",getinfo);
 function payroll()
 {
-    console.log("The payroll is here...!!!!");
-    console.log("Employe Name",e_name);
-    console.log("Employe Number",e_number);
-    console.log("Employe Department",e_dept);
-    console.log("Employe Hours",e_hours);
-    console.log("Employe code",e_code);
-    console.log("Employe Fixed salary",fixed_salry);
-    console.log("Employe Deduction",health_charge);
-    console.log("Employe Salary",taxfree_allowance);
+  document.getElementById(`output_Ename`).value=`${e_name}`;
+  document.getElementById(`output_Enumber`).value=`${e_number}`;
+  document.getElementById(`output_Edept`).value=`${e_dept}`;
+  document.getElementById(`output_Ehour`).value=`${e_hours}`;
+  document.getElementById(`output_Ecode`).value=`${e_code}`;
+  document.getElementById(`output_Efixedsalary`).value=`${fixed_salry}`;
+  document.getElementById(`output_Ededuction`).value=`${health_charge}`;
+  document.getElementById(`output_Efinalsalary`).value=`${taxfree_allowance}`;  
 }
 function getinfo()
 {
